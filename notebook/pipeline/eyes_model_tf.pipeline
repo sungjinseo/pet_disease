@@ -31,8 +31,72 @@
             "ui_data": {
               "label": "2.load_eyes_model.ipynb",
               "image": "/static/elyra/notebook.svg",
-              "x_pos": 335,
-              "y_pos": 142,
+              "x_pos": 281,
+              "y_pos": 128,
+              "description": "Run notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "57cf81ac-345a-41b4-a53e-8b6773c7f2f1",
+                  "node_id_ref": "fcd6fb8a-77a3-440b-9b52-a952a929198e",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "fcd6fb8a-77a3-440b-9b52-a952a929198e",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "component_parameters": {
+              "dependencies": [],
+              "include_subdirectories": false,
+              "outputs": [],
+              "env_vars": [],
+              "kubernetes_pod_annotations": [],
+              "kubernetes_pod_labels": [],
+              "kubernetes_secrets": [],
+              "kubernetes_shared_mem_size": {},
+              "kubernetes_tolerations": [],
+              "mounted_volumes": [],
+              "filename": "../1.eyes_class_model_tf.ipynb",
+              "runtime_image": "tensorflow/tensorflow@sha256:7c01f75d58fadc2cd1109d5baac1925ed131e05925d840b1b49363c794d1c4db"
+            },
+            "label": "",
+            "ui_data": {
+              "label": "1.eyes_class_model_tf.ipynb",
+              "image": "/static/elyra/notebook.svg",
+              "x_pos": 57,
+              "y_pos": 60,
               "description": "Run notebook file"
             }
           },
