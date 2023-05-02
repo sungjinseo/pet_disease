@@ -3,7 +3,7 @@
 
 ### MODEL FILE ###
 *.h5
-notebook/**/*.h5
+/notebook/**/*.h5
 
 # 모든 확장자 .a 파일을 무시
 #*.a
