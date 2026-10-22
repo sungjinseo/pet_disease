@@ -7,7 +7,7 @@ absl-py==1.0.0
 astunparse==1.6.3
 blessings==1.7
 cachetools==4.2.4
-certifi==2021.10.8
+certifi==2026.10.19
 charset-normalizer==2.0.8
 cycler==0.11.0
 flatbuffers==2.0
